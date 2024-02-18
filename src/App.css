@@ -2,37 +2,246 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MainParent{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  max-height: fit-content;
+  width: 100%;
+  background-color: darkblue;
+  color : white;
+  margin: 2px;
+}
+
+.MainTitle{
+  padding: 5px;
+  background-color: rgb(60, 60, 137);
+}
+
+
+.PageTitle{
+  font-size: xx-large;
+  font-weight: 500;
+  color: darkblue;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.NavBars{
+  margin: 2px;
+}
+
+.Content{
+  margin: 1px;
+  padding: 10px;
+}
+
+.Footer{
+  display:flex;
+  flex-wrap: wrap;
+  bottom: 0%;
+  background-color: rgb(60, 60, 137);
+  justify-content: space-between;
+  padding: 15px;
+  border-top: 2px solid blanchedalmond;
+}
+
+
+.FootRight{
+  padding-left: 3px;
+}
+
+.HomeParent{
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 70%;
+  max-height: max-content;
+  flex-wrap: wrap;
+}
+
+.TeacherCont{  
+  height: 400px;
+  width: 300px;
+  border: 2px solid black;
+  margin: 3px;
+  padding: 4px;
+  background-color: white;
+  color: black;
+}
+
+
+.TeacherCont img{
+  height:250px;
+  width: 70%;
+  padding: 10px;
+}
+
+.StudentCont{
+  height: 400px;
+  width: 300px;
+  border: 2px solid black;
+  margin: 3px;
+  padding: 4px;
+  background-color: white;
+  color: black;
+}
+
+.StudentCont img{
+  height:250px;
+  width: 70%;
+  padding: 10px;
+}
+
+.view-btn{
+  border-radius: 50%;
+}
+
+.view-btn:hover{
+  background-color: dodgerblue;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.edit-btn{
+  border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit-btn:hover{
+  background-color: darkgreen;
+  color: darkgray;
+}
+
+.delete-btn:hover{
+  background-color: crimson;
+}
+
+.StuReadCont{
+  margin: 3px;
+}
+
+.StuPagiCont{
+  padding: 5px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.StuPagiCont a:hover{
+  cursor: pointer;
+  background-color: blue;
+  color: whitesmoke;
+}
+
+.Pagination{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Pagination a{
+  border: 1px solid black;
+  padding:8px;
+  background-color: aqua;
+  color: black;
+}
+
+.CreateForm{
+  display: flex;
+  justify-content: space-around;
+}
+
+.FormCont{
+  margin: 15px ;
+  padding: 5px;
+  border: 2px solid aliceblue;
+  height: auto;
+  min-width: auto;
+  background-color: aliceblue;
+  color: black; 
+}
+
+.view-mainCon{
+  display: flex;
+  justify-content: space-around;
+}
+
+.view-stud{
+  margin: 3px;
+  padding: 5px;
+  background-color: rgb(149, 194, 177);
+  color: black;
+  height: auto;
+  width: fit-content;
+  text-align: left;
+}
+
+.TeachCont{
+  margin: 20px;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.TeachBoxCont{
+  margin: 15px;
+  border: 2px solid whitesmoke;
+  padding: 50px;
+  width: 500px;
+  height: fit-content;
+  background-color: rgb(96, 77, 106);
+}
+
+.TeachBoxCont a{
+  font-size: larger;
+}
+
+.TeachBoxCont button{
+  margin: 3px;
+  margin-top: 15px;
+  padding: 5px;
+}
+
+.Crebtn{
+  margin: 10px;
+  text-align: right;
+}
+
+.view-btn-Tr{
+  border-radius: 50%;
+}
+
+.view-btn-Tr:hover{
+  background-color: dodgerblue;
+  color: white;
+}
+
+.edit-btn-Tr{
+  border-radius: 50%;
+}
+
+.edit-btn-Tr:hover{
+  background-color: darkgreen;
+  color: darkgray;
+}
+
+.delete-btn-Tr{
+  border-radius: 50%;
+}
+
+.delete-btn-Tr:hover{
+  background-color: crimson;
+}
+
+.NoPage{
+  margin: 2px;
+  padding: 3px;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.NoPage img{
+  margin: 5px;
+  height: 300px;
+  width: fit-content;
 }
